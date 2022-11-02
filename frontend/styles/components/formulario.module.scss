@@ -1,0 +1,50 @@
+@use "../index.scss" as *;
+
+.form {
+  font-family: inherit;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  label {
+    font-size: 1rem;
+    font-weight: 800;
+    display: block;
+    padding: 1rem 0 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  input,
+  textarea {
+    color: $textLightColor;
+    border: 1.2px solid $textLightColor;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.4rem 1.5rem;
+    margin-bottom: 1.2rem;
+    font-family: inherit;
+
+    &:focus-visible {
+      outline: 0.2px solid $textLightColor;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    background-color: $primaryColor;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $primaryColorDarker;
+    }
+  }
+}

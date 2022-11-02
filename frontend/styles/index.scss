@@ -1,0 +1,47 @@
+@forward "variables.scss";
+@forward "mixins.scss";
+@use "mixins.scss" as *;
+@use "variables.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f5f9;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  @include changeFont(1.5rem);
+}
+
+h2 {
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+  @include changeFont(1.25rem);
+}
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.25rem;
+
+  @include changeFont(1.15rem);
+}
+
+h4 {
+  line-height: 1.25rem;
+
+  font-size: 1rem;
+  @include changeFont(1.1rem);
+}
